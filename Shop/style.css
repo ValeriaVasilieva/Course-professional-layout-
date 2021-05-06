@@ -1666,4 +1666,228 @@ body {
           box-sizing: border-box;
   border-bottom: 4px solid #f16d7f;
 }
+
+.present-item {
+  background-color: #f7f7f7;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.present-item .present-item__back {
+  min-height: 780px;
+  background-image: url(img/single_page_background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.present-item-info {
+  margin-bottom: 110px;
+}
+
+.present-item-info .present-item-box {
+  margin-top: -60px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding-top: 75px;
+  padding-bottom: 120px;
+}
+
+.present-item-info .present-item-box .present-item__discription {
+  max-width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__top-heading {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #f16d7f;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__top-heading:after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: #f16d7f;
+  width: 50%;
+  position: absolute;
+  right: calc(100% - 75%);
+  top: calc(100% - 1px);
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__bottom-heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #5e5e5e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__material-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__material-box .present-item__discription__material {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #b9b9b9;
+  text-transform: uppercase;
+  margin-right: 45px;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__material-box .present-item__discription__material .present-item__discription__material-color {
+  color: #2f2f2f;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__material-box .present-item__discription__material:last-child {
+  margin-right: 0;
+}
+
+.present-item-info .present-item-box .present-item__discription .present-item__discription__prise {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #f16d7f;
+  margin-bottom: 40px;
+}
+
+.present-item-info .present-item-box .present-item__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 620px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form .present-item__options__choice-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form .present-item__options__choice-box .present-item__options__choice__heading {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2f2f2f;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form .present-item__options__choice-box .present-item__options__choice__select {
+  width: 144px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-right: 50px;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form .present-item__options__choice-box .present-item__options__choice__number {
+  width: 144px;
+  height: 33px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form .present-item__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #f16d7f;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #f16d7f;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form .present-item__button .present-item__button-img {
+  margin-right: 10px;
+}
+
+.present-item-info .present-item-box .present-item__options .present-item__options__choice-form .present-item__button:hover {
+  background-color: #f16d7f;
+  color: white;
+}
+
+.like-also {
+  margin-bottom: 60px;
+}
+
+.like-also .like-also_heading {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.like-also .like-also-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */
