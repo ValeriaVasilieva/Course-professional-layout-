@@ -660,8 +660,11 @@ body {
                     height: 15px;
                     display: none;
                 }
-
             }
+        }
+
+        .featured-items__info:hover .stars {
+            display: block;
         }
     }
 }
@@ -689,10 +692,6 @@ body {
         color: #ffffff;
         padding-left: 7px;
     }
-}
-
-.featured-items__box:hover .stars {
-    display: block;
 }
 
 .featured-items__box:hover .featured-items__img {
@@ -774,8 +773,6 @@ body {
         }
     }
 }
-
-
 
 .subscribe {
     min-height: 440px;
@@ -1400,4 +1397,9 @@ body {
         }
     }
 
+}
+
+.navbar__item__product {
+    box-sizing: border-box;
+    border-bottom: 4px solid $main-color;
 }
