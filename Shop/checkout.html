@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRAND</title>
     <script src="https://kit.fontawesome.com/4da82a2874.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -89,7 +91,7 @@
         </div>
     </header>
 
-    <nav class="navbar">
+    <nav class="navbar-5">
         <div class="navbar__container container">
             <ul class="menu">
                 <li class="menu__list">
@@ -392,158 +394,391 @@
 
     <section class="category">
         <div class="category__container container">
-            <h2 class="category__heading">New arrivals</h2>
+            <h2 class="category__heading">Checkout</h2>
             <nav class="way">
                 <a href="index.html" class="location"> Home</a>
-                <a href="product.html" class="location"> Man</a>
-                <a href="single_page.html" class="location"> New arrivals</a>
+                <a href="product.html" class="location"> Checkout</a>
             </nav>
         </div>
     </section>
 
-    <section class="present-item">
+    <section>
         <div class="container">
-            <div class="present-item__back"></div>
-        </div>
-    </section>
+            <div class="checkout-content">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
 
-    <div class="present-item-info">
-        <div class="present-item-box container">
-            <div class="present-item__discription">
-                <h3 class="present-item__discription__top-heading">Women Collection</h3>
-                <h2 class="present-item__discription__bottom-heading">Moschino Cheap And Chic</h2>
-                <p class="present-item__discription__text">Compellingly actualize fully researched processes before
-                    proactive outsourcing. Progressively
-                    syndicate collaborative architectures before cutting-edge services. Completely visualize
-                    parallel
-                    core competencies rather than exceptional portals.</p>
-                <div class="present-item__discription__material-box">
-                    <p class="present-item__discription__material">Material: <span
-                            class="present-item__discription__material-color">Cotton</span> </p>
-                    <p class="present-item__discription__material">Designer: <span
-                            class="present-item__discription__material-color">Binburhanb</span> </p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="checkout-header collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                01. Shipping Adress
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Check as a guest or register</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio1" checked>
+                                    <label class="checkout-text checkout-text_smaller" for="checkout-radio1">Checkout as
+                                        guest</label>
+                                </div>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio2">
+                                    <label class="checkout-text checkout-text_smaller checkout-form__mg"
+                                        for="checkout-radio2">Register</label>
+                                </div>
+
+                                <h3 class="checkout-text">Register and save time!</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+                                <a class="checkout-paragraph checkout-link" href="#">Fast and easy checkout</a>
+                                <a class="checkout-paragraph checkout-link checkout-form__mg" href="#">Easy access to
+                                    your order history
+                                    and status</a>
+                                <div class="checkout-form__bottom">
+                                    <input class=" checkout-submit" type="submit" value="Continue">
+                                </div>
+                            </form>
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Already registed?</h3>
+                                <p class="checkout-paragraph">Please log in below</p>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-email">Email
+                                    adress</label>
+                                <input class="checkout-form__mg checkout-input" type="email" id="checkout-email"
+                                    required>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-password">Password</label>
+                                <input class="checkout-form__mg checkout-input" type="textarea" id="checkout-password"
+                                    required>
+                                <p class="checkout-paragraph checkout-paragraph_red">* Required Fileds</p>
+
+                                <div class="checkout-form__bottom">
+                                    <input class="checkout-submit" type="submit" value="Log in">
+                                    <a class="password-link" href="#">Forgot password?</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="checkout-header collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                02. Billing Information
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Check as a guest or register</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio1" checked>
+                                    <label class="checkout-text checkout-text_smaller" for="checkout-radio1">Checkout as
+                                        guest</label>
+                                </div>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio2">
+                                    <label class="checkout-text checkout-text_smaller checkout-form__mg"
+                                        for="checkout-radio2">Register</label>
+                                </div>
+
+                                <h3 class="checkout-text">Register and save time!</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+                                <a class="checkout-paragraph checkout-link" href="#">Fast and easy checkout</a>
+                                <a class="checkout-paragraph checkout-link checkout-form__mg" href="#">Easy access to
+                                    your order history
+                                    and status</a>
+                                <div class="checkout-form__bottom">
+                                    <input class=" checkout-submit" type="submit" value="Continue">
+                                </div>
+                            </form>
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Already registed?</h3>
+                                <p class="checkout-paragraph">Please log in below</p>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-email">Email
+                                    adress</label>
+                                <input class="checkout-form__mg checkout-input" type="email" id="checkout-email"
+                                    required>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-password">Password</label>
+                                <input class="checkout-form__mg checkout-input" type="textarea" id="checkout-password"
+                                    required>
+                                <p class="checkout-paragraph checkout-paragraph_red">* Required Fileds</p>
+
+                                <div class="checkout-form__bottom">
+                                    <input class="checkout-submit" type="submit" value="Log in">
+                                    <a class="password-link" href="#">Forgot password?</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="checkout-header collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                03. Shipping Information
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Check as a guest or register</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio1" checked>
+                                    <label class="checkout-text checkout-text_smaller" for="checkout-radio1">Checkout as
+                                        guest</label>
+                                </div>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio2">
+                                    <label class="checkout-text checkout-text_smaller checkout-form__mg"
+                                        for="checkout-radio2">Register</label>
+                                </div>
+
+                                <h3 class="checkout-text">Register and save time!</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+                                <a class="checkout-paragraph checkout-link" href="#">Fast and easy checkout</a>
+                                <a class="checkout-paragraph checkout-link checkout-form__mg" href="#">Easy access to
+                                    your order history
+                                    and status</a>
+                                <div class="checkout-form__bottom">
+                                    <input class=" checkout-submit" type="submit" value="Continue">
+                                </div>
+                            </form>
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Already registed?</h3>
+                                <p class="checkout-paragraph">Please log in below</p>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-email">Email
+                                    adress</label>
+                                <input class="checkout-form__mg checkout-input" type="email" id="checkout-email"
+                                    required>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-password">Password</label>
+                                <input class="checkout-form__mg checkout-input" type="textarea" id="checkout-password"
+                                    required>
+                                <p class="checkout-paragraph checkout-paragraph_red">* Required Fileds</p>
+
+                                <div class="checkout-form__bottom">
+                                    <input class="checkout-submit" type="submit" value="Log in">
+                                    <a class="password-link" href="#">Forgot password?</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="checkout-header collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                04. Shopping Method
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Check as a guest or register</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio1" checked>
+                                    <label class="checkout-text checkout-text_smaller" for="checkout-radio1">Checkout as
+                                        guest</label>
+                                </div>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio2">
+                                    <label class="checkout-text checkout-text_smaller checkout-form__mg"
+                                        for="checkout-radio2">Register</label>
+                                </div>
+
+                                <h3 class="checkout-text">Register and save time!</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+                                <a class="checkout-paragraph checkout-link" href="#">Fast and easy checkout</a>
+                                <a class="checkout-paragraph checkout-link checkout-form__mg" href="#">Easy access to
+                                    your order history
+                                    and status</a>
+                                <div class="checkout-form__bottom">
+                                    <input class=" checkout-submit" type="submit" value="Continue">
+                                </div>
+                            </form>
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Already registed?</h3>
+                                <p class="checkout-paragraph">Please log in below</p>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-email">Email
+                                    adress</label>
+                                <input class="checkout-form__mg checkout-input" type="email" id="checkout-email"
+                                    required>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-password">Password</label>
+                                <input class="checkout-form__mg checkout-input" type="textarea" id="checkout-password"
+                                    required>
+                                <p class="checkout-paragraph checkout-paragraph_red">* Required Fileds</p>
+
+                                <div class="checkout-form__bottom">
+                                    <input class="checkout-submit" type="submit" value="Log in">
+                                    <a class="password-link" href="#">Forgot password?</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="checkout-header collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                05. Payment Method
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Check as a guest or register</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio1" checked>
+                                    <label class="checkout-text checkout-text_smaller" for="checkout-radio1">Checkout as
+                                        guest</label>
+                                </div>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio2">
+                                    <label class="checkout-text checkout-text_smaller checkout-form__mg"
+                                        for="checkout-radio2">Register</label>
+                                </div>
+
+                                <h3 class="checkout-text">Register and save time!</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+                                <a class="checkout-paragraph checkout-link" href="#">Fast and easy checkout</a>
+                                <a class="checkout-paragraph checkout-link checkout-form__mg" href="#">Easy access to
+                                    your order history
+                                    and status</a>
+                                <div class="checkout-form__bottom">
+                                    <input class=" checkout-submit" type="submit" value="Continue">
+                                </div>
+                            </form>
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Already registed?</h3>
+                                <p class="checkout-paragraph">Please log in below</p>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-email">Email
+                                    adress</label>
+                                <input class="checkout-form__mg checkout-input" type="email" id="checkout-email"
+                                    required>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-password">Password</label>
+                                <input class="checkout-form__mg checkout-input" type="textarea" id="checkout-password"
+                                    required>
+                                <p class="checkout-paragraph checkout-paragraph_red">* Required Fileds</p>
+
+                                <div class="checkout-form__bottom">
+                                    <input class="checkout-submit" type="submit" value="Log in">
+                                    <a class="password-link" href="#">Forgot password?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="checkout-header collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                06. Order Review
+                            </button>
+                        </h2>
+
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Check as a guest or register</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio1" checked>
+                                    <label class="checkout-text checkout-text_smaller" for="checkout-radio1">Checkout as
+                                        guest</label>
+                                </div>
+
+                                <div class="checkout-radio">
+                                    <input type="radio" name="checkout-radio" id="checkout-radio2">
+                                    <label class="checkout-text checkout-text_smaller checkout-form__mg"
+                                        for="checkout-radio2">Register</label>
+                                </div>
+
+                                <h3 class="checkout-text">Register and save time!</h3>
+                                <p class="checkout-paragraph">Register with us for future convenience</p>
+                                <a class="checkout-paragraph checkout-link" href="#">Fast and easy checkout</a>
+                                <a class="checkout-paragraph checkout-link checkout-form__mg" href="#">Easy access to
+                                    your order history
+                                    and status</a>
+                                <div class="checkout-form__bottom">
+                                    <input class=" checkout-submit" type="submit" value="Continue">
+                                </div>
+                            </form>
+
+                            <form class="checkout-form" action="#">
+                                <h3 class="checkout-text">Already registed?</h3>
+                                <p class="checkout-paragraph">Please log in below</p>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-email">Email
+                                    adress</label>
+                                <input class="checkout-form__mg checkout-input" type="email" id="checkout-email"
+                                    required>
+                                <label class="checkout-text checkout-text_smaller checkout-form__mg checkout-text_star"
+                                    for="checkout-password">Password</label>
+                                <input class="checkout-form__mg checkout-input" type="textarea" id="checkout-password"
+                                    required>
+                                <p class="checkout-paragraph checkout-paragraph_red">* Required Fileds</p>
+
+                                <div class="checkout-form__bottom">
+                                    <input class="checkout-submit" type="submit" value="Log in">
+                                    <a class="password-link" href="#">Forgot password?</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
-                <p class="present-item__discription__prise">561$</p>
             </div>
-
-            <div class="present-item__options">
-                <form action="#" class="present-item__options__choice-form">
-                    <div class="present-item__options__choice-box">
-                        <div class="present-item__options__choice">
-                            <p class="present-item__options__choice__heading">Choose Color</p>
-                            <select class="present-item__options__choice__select" name="item-color">
-                                <option value="Red">Red</option>
-                                <option value="Blue">Blue</option>
-                                <option value="White">White</option>
-                            </select>
-                        </div>
-                        <div class="present-item__options__choice">
-                            <p class="present-item__options__choice__heading">Choose Size</p>
-                            <select class="present-item__options__choice__select" name="item-color">
-                                <option value="Red">XXS</option>
-                                <option value="Blue">XS</option>
-                                <option value="White">S</option>
-                                <option value="Red">M</option>
-                                <option value="Blue">L</option>
-                                <option value="White">XL</option>
-                                <option value="White">XXL</option>
-                            </select>
-                        </div>
-                        <div class="present-item__options__choice">
-                            <p class="present-item__options__choice__heading">Quantity</p>
-                            <input class="present-item__options__choice__number" type="number" value="1">
-                        </div>
-                    </div>
-
-                    <input type="submit" class="present-item__button" value="Add to Cart">
-
-                </form>
-
-
-            </div>
-        </div>
-    </div>
-
-    <section class="like-also">
-        <div class="container">
-
-            <h2 class="like-also_heading">You May Like Also</h2>
-
-            <div class="like-also-box">
-                <div class="featured-items__box">
-                    <a href="single_page.html" class="featured-items__link">
-                        <img class="featured-items__img" src="img/like-also1.png" alt="t-shirt">
-                        <div class="featured-items__info">
-                            <p class="text type-of-wear">Mango People T-shirt</p>
-                            <div class="price-box">
-                                <p class="price">$52.00</p>
-                                <img class="stars" src="img/stars5.png" alt="stars">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="add-to-cart-box">
-                        <a href="#" class="add-to-cart">
-                            <img src="img/cart_white.png" alt="cart">
-                            <p class="add-to-cart__text">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="featured-items__box">
-                    <a href="single_page.html" class="featured-items__link">
-                        <img class="featured-items__img" src="img/like_also4.png" alt="t-shirt">
-                        <div class="featured-items__info">
-                            <p class="text type-of-wear">Mango People T-shirt</p>
-                            <div class="price-box">
-                                <p class="price">$52.00</p>
-                                <img class="stars" src="img/stars5.png" alt="stars">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="add-to-cart-box">
-                        <a href="#" class="add-to-cart">
-                            <img src="img/cart_white.png" alt="cart">
-                            <p class="add-to-cart__text">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="featured-items__box">
-                    <a href="single_page.html" class="featured-items__link">
-                        <img class="featured-items__img" src="img/like-also3.png" alt="t-shirt">
-                        <div class="featured-items__info">
-                            <p class="text type-of-wear">Mango People T-shirt</p>
-                            <div class="price-box">
-                                <p class="price">$52.00</p>
-                                <img class="stars" src="img/stars5.png" alt="stars">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="add-to-cart-box">
-                        <a href="#" class="add-to-cart">
-                            <img src="img/cart_white.png" alt="cart">
-                            <p class="add-to-cart__text">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="featured-items__box">
-                    <a href="single_page.html" class="featured-items__link">
-                        <img class="featured-items__img" src="img/like_also4.png" alt="t-shirt">
-                        <div class="featured-items__info">
-                            <p class="text type-of-wear">Mango People T-shirt</p>
-                            <div class="price-box">
-                                <p class="price">$52.00</p>
-                                <img class="stars" src="img/stars5.png" alt="stars">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="add-to-cart-box">
-                        <a href="#" class="add-to-cart">
-                            <img src="img/cart_white.png" alt="cart">
-                            <p class="add-to-cart__text">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -665,6 +900,10 @@
 
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
 </body>
 
