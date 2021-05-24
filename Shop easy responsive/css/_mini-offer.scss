@@ -1,0 +1,39 @@
+.mini-offer {
+  background-color: $main-dark-lighter;
+  padding: 5% 0;
+}
+
+.qualities-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.qualities {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qualities-img {
+  width: 50px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .qualities {
+    width: 50%;
+  }
+
+  .qualities-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 566px) {
+  .qualities {
+    width: 100%;
+  }
+}
