@@ -1,0 +1,41 @@
+.offers {
+  margin: 2% 2% 7%;
+}
+
+.top-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.offer-box {
+  width: 32%;
+  padding: 2% 0;
+}
+
+.offer {
+  position: relative;
+}
+
+.offer-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-size {
+  width: 100%;
+  filter: brightness(50%);
+  padding-top: 2%;
+}
+
+@media (max-width: 566px) {
+  .offer-box {
+    width: 100%;
+  }
+}

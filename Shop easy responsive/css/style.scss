@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+
+@import "const";
+
+@import "offers";
+
+@import "products";
+
+@import "mini-offer";
+
+@import "footer";
+
+body {
+  font-family: "Lato";
+}
+
+.container {
+  max-width: $container-size;
+  margin: 0 auto;
+}
+
+.heading {
+  color: $main-dark;
+  font-style: 700;
+  font-size: 30px;
+  margin: 0.3em 0;
+  text-transform: uppercase;
+
+  &_normal {
+    font-style: 400;
+  }
+
+  &_big {
+    font-style: 900;
+    font-size: 48px;
+  }
+
+  &_pink {
+    color: $main-pink;
+  }
+
+  &_smaller {
+    font-size: 24px;
+  }
+}
+
+.paragraph {
+  font-style: 400;
+  font-size: 20px;
+  color: $main-dark;
+  margin: 0.3em 0;
+  padding: 0;
+
+  &_input {
+    font-size: 14px;
+    color: $main-dark-lighter;
+  }
+
+  &_up {
+    text-transform: uppercase;
+  }
+
+  &_small {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &_white {
+    color: $light-text;
+  }
+
+  &_pink {
+    color: $main-pink;
+    font-style: 700;
+    font-size: 24px;
+  }
+
+  &_gray {
+    color: $light-gray-text;
+    text-align: center;
+  }
+}
+
+.header {
+  background: $main-dark;
+  height: 75px;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-menu,
+  .right-menu {
+    display: flex;
+  }
+}
+
+.menu-link {
+  text-decoration: none;
+  display: flex;
+  height: 75px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.top {
+  background: #f1e4e6;
+}
+
+.top-man {
+  background: url(../img/top-man.png) no-repeat;
+  background-size: auto 100%;
+  background-position: -150px;
+  height: 700px;
+  display: flex;
+  justify-content: flex-end;
+
+  .top-content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .top-heading {
+    display: flex;
+
+    .pink-line {
+      width: 15px;
+      background-color: $main-pink;
+      margin-right: 12px;
+      margin-top: 5%;
+      margin-bottom: 2%;
+    }
+  }
+}
+
+.subscribe {
+  min-height: 440px;
+  background: url(../img/subscribe_background.png) no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  .subscribe-box {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+  }
+}
+
+.reviews-box {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+
+  .reviews {
+    padding: 5% 10%;
+    text-align: center;
+  }
+
+  .photo-box {
+    display: flex;
+    justify-content: center;
+
+    .photo {
+      width: 83px;
+      height: 83px;
+    }
+  }
+}
+
+.subscribe-form-box {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 0;
+
+    .subscribe-input {
+      display: flex;
+
+      .subscribe-email {
+        width: 250px;
+        height: 46px;
+        background-color: #e1e1e1;
+        border: none;
+        border-radius: 23px 0 0 23px;
+        padding-left: 28px;
+        outline: none;
+        box-sizing: border-box;
+
+        &:focus {
+          border-radius: 23px 0 0 23px;
+          border: 1px solid $main-pink;
+        }
+
+        @media (max-width: 566px) {
+          width: 200px;
+        }
+      }
+
+      .subscribe-submit {
+        width: 80px;
+        height: 46px;
+        border: none;
+        background-color: $main-pink;
+        border: 1px solid $main-pink;
+        border-radius: 0px 23px 23px 0px;
+        color: #ffffff;
+
+        &:hover {
+          background-color: #ffffff;
+          color: $main-pink;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .subscribe-box {
+    flex-wrap: wrap;
+  }
+
+  .reviews-box {
+    width: 100%;
+  }
+
+  .subscribe-form-box {
+    width: 100%;
+  }
+
+  .top-man {
+    height: 400px;
+    background-position: -50px;
+  }
+
+  .heading {
+    font-size: 20px;
+
+    &_big {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 566px) {
+  .top-man {
+    background: none;
+    height: 50vh;
+
+    .top-content {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .heading {
+    font-size: 15px;
+
+    &_big {
+      font-size: 20px;
+    }
+  }
+
+  .no-link {
+    display: none;
+  }
+}
